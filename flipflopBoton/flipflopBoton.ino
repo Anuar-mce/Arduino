@@ -1,7 +1,7 @@
 /*
  * Ejercicio con dos leds (Pin 2 y 3) y un botón (Pin 4) conectados a la Arduino.
  * Mientras pulsemos el botón se encenderá el primer led y el segundo se apagará, 
- * si no se pulsa, el pimer led se apagará y el segundo se encenderá. 
+ * si no se pulsa, el primer led se apagará y el segundo se encenderá. 
  */
 void setup() {
   //ponemos los dos pines en modo salida
@@ -16,7 +16,7 @@ void loop() {
     digitalWrite(2,HIGH);
     digitalWrite(3,LOW);
   }else{
-    //Si no se pulsa el primer led se apaga y el segundo se encende.
+    //Si no se pulsa el primer led se apaga y el segundo se enciende.
     digitalWrite(3,LOW);
     digitalWrite(4,HIGH);
   }
